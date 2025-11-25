@@ -1,0 +1,442 @@
+/* ============================= */
+/*  LUMEN STYLE.CSS - 100% WORKING */
+/*  Fixed Footer Icons */
+/* ============================= */
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+/* All Typography */
+body, h1, h2, h3, h4, h5, h6, p, span, a, button, div {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/* Brand Colors */
+:root {
+    --lumen-blue: #1884C7;
+    --lumen-gold: #F78D1E;
+}
+
+/* -------------------- */
+/* Navbar */
+.navbar {
+    background-color: var(--lumen-blue) !important;
+    min-height: 70px;
+}
+.navbar .navbar-brand {
+    color: white !important;
+    font-weight: 800 !important;
+    font-size: 1.6rem !important;
+}
+.navbar .nav-link {
+    color: white !important;
+    font-weight: 600 !important;
+}
+.navbar .nav-link:hover {
+    color: var(--lumen-gold) !important;
+}
+
+/* -------------------- */
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(24,132,199,0.95), rgba(24,132,199,0.98)), 
+                url('../img/hero-bg.jpg') center/cover no-repeat !important;
+    color: white !important;
+    text-align: center;
+    padding: 100px 0;
+}
+.hero h1 {
+    font-weight: 900 !important;
+    color: white !important;
+}
+.hero .btn-warning {
+    background-color: var(--lumen-gold) !important;
+    border-color: var(--lumen-gold) !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+/* -------------------- */
+/* Division Cards */
+.division-card {
+    border-radius: 15px !important;
+    overflow: hidden;
+    transition: all 0.4s ease !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+}
+.division-card:hover {
+    transform: translateY(-15px) !important;
+    box-shadow: 0 25px 50px rgba(24,132,199,0.4) !important;
+}
+.division-card i {
+    font-size: 3rem !important;
+    margin-bottom: 15px !important;
+}
+
+/* Specific icon colors */
+.division-card .fa-broadcast-tower { color: var(--lumen-blue) !important; }
+.division-card .fa-hard-hat,
+.division-card .fa-hands-praying { color: var(--lumen-gold) !important; }
+
+/* Buttons */
+.btn-outline-primary { 
+    border-color: var(--lumen-blue) !important; 
+    color: var(--lumen-blue) !important; 
+}
+.btn-outline-primary:hover { 
+    background: var(--lumen-blue) !important; 
+    color: white !important; 
+}
+.btn-outline-warning { 
+    border-color: var(--lumen-gold) !important; 
+    color: var(--lumen-gold) !important; 
+}
+.btn-outline-warning:hover { 
+    background: var(--lumen-gold) !important; 
+    color: white !important; 
+}
+
+/* Headings (Website Global) */
+h2, h5 { 
+    color: var(--lumen-blue) !important; 
+    font-weight: 800 !important; 
+}
+
+/* -------------------- */
+/* PAGE DIVISION HEADINGS (MEDIA, CONSTRUCTION, MINISTRY, CONTACT) */
+.page-division h1,
+.page-division h2,
+.page-division h3,
+.page-division h4,
+.page-division h5,
+.page-division h6 {
+    color: var(--lumen-gold) !important;
+    font-weight: 800 !important;
+}
+
+/* ============================= */
+/* SOCIAL ICONS - FIXED FOR BOTH TOP BAR AND FOOTER */
+/* ============================= */
+
+/* Top Bar Social Icons */
+.top-bar .social-icons a {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 35px !important;
+    height: 35px !important;
+    margin-right: 8px !important;
+    border-radius: 50% !important;
+    background: rgba(0,0,0,0.1) !important;
+    color: #000 !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    font-size: 16px !important;
+}
+
+.top-bar .social-icons a:hover {
+    background: #000 !important;
+    color: #ffc107 !important;
+    transform: translateY(-2px) !important;
+}
+
+/* Footer Social Icons - USING SAME STYLING AS TOP BAR */
+footer .social-icons a {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 40px !important;
+    height: 40px !important;
+    margin-right: 10px !important;
+    border-radius: 50% !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: #fff !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    font-size: 18px !important;
+}
+
+footer .social-icons a:hover {
+    background: #ffc107 !important;
+    color: #000 !important;
+    transform: translateY(-3px) !important;
+}
+
+/* ============================= */
+/* FONT AWESOME FIX - CRITICAL */
+/* ============================= */
+
+/* Ensure ALL Font Awesome icons display properly */
+i.fas, i.fab, i.far, i.fal, i.fad {
+    font-style: normal !important;
+    font-variant: normal !important;
+    text-rendering: auto !important;
+    line-height: 1 !important;
+    display: inline-block !important;
+}
+
+/* Font Awesome Solid Icons */
+i.fas {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
+}
+
+/* Font Awesome Brand Icons */
+i.fab {
+    font-family: "Font Awesome 6 Brands" !important;
+    font-weight: 400 !important;
+}
+
+/* Font Awesome Regular Icons */
+i.far {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 400 !important;
+}
+
+/* Force icons to be visible everywhere */
+i {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* ============================= */
+/* ADDITIONAL STYLES */
+/* ============================= */
+
+/* Footer link styling */
+footer a.text-decoration-none:hover {
+    color: #ffc107 !important;
+    padding-left: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2rem !important; }
+    .division-card i { font-size: 2.5rem !important; }
+    
+    /* Mobile social icons */
+    .top-bar .social-icons a,
+    footer .social-icons a {
+        width: 32px !important;
+        height: 32px !important;
+        font-size: 14px !important;
+    }
+}
+
+
+
+
+/* ============================= */
+/* FONT AWESOME FIX FOR TOP BAR & FOOTER ONLY */
+/* ============================= */
+
+/* Force Font Awesome icons in top bar */
+.top-bar .fab,
+.top-bar .fas {
+    font-family: "Font Awesome 6 Brands", "Font Awesome 6 Free" !important;
+    font-weight: 400 !important;
+    display: inline-block !important;
+    font-style: normal !important;
+    font-variant: normal !important;
+    text-rendering: auto !important;
+    line-height: 1 !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+/* Force Font Awesome icons in footer */
+footer .fab,
+footer .fas {
+    font-family: "Font Awesome 6 Brands", "Font Awesome 6 Free" !important;
+    font-weight: 400 !important;
+    display: inline-block !important;
+    font-style: normal !important;
+    font-variant: normal !important;
+    text-rendering: auto !important;
+    line-height: 1 !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+/* Specific fix for solid icons in footer */
+footer .fas {
+    font-weight: 900 !important;
+}
+
+/* Ensure top bar icons are visible */
+.top-bar i {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: inline-block !important;
+}
+
+/* Ensure footer icons are visible */
+footer i {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: inline-block !important;
+}
+
+
+
+
+
+/* ============================= */
+/* MOBILE RESPONSIVE FIXES */
+/* ============================= */
+
+/* Mobile Navigation */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: var(--lumen-blue);
+        padding: 20px;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+    
+    .navbar-nav .dropdown-menu {
+        background: rgba(255,255,255,0.1);
+        border: none;
+        margin: 10px 0;
+    }
+    
+    .navbar-nav .dropdown-item {
+        color: white !important;
+        padding: 10px 20px;
+    }
+    
+    .navbar-nav .dropdown-item:hover {
+        background: var(--lumen-gold);
+        color: #000 !important;
+    }
+}
+
+/* Ensure mobile toggle button works */
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
+}
+
+/* Mobile social icons */
+@media (max-width: 768px) {
+    .top-bar .social-icons a,
+    footer .social-icons a {
+        width: 35px !important;
+        height: 35px !important;
+        margin-right: 5px !important;
+    }
+    
+    .top-bar .container,
+    footer .container {
+        text-align: center;
+    }
+    
+    .top-bar .d-flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+
+
+
+
+
+/* ============================= */
+/* FIX DIVISION COLORS TO YELLOW */
+/* ============================= */
+
+/* Make ALL division icons yellow/gold */
+.division-card .fa-broadcast-tower,
+.division-card .fa-hard-hat,
+.division-card .fa-hands-praying,
+.division-card i {
+    color: var(--lumen-gold) !important;
+}
+
+/* Make division buttons yellow */
+.division-card .btn-outline-warning {
+    border-color: var(--lumen-gold) !important;
+    color: var(--lumen-gold) !important;
+}
+
+.division-card .btn-outline-warning:hover {
+    background: var(--lumen-gold) !important;
+    color: white !important;
+}
+
+/* Make "Listen Lumen Radio" section yellow */
+.bg-dark.text-white h4,
+.bg-dark.text-white i {
+    color: var(--lumen-gold) !important;
+}
+
+/* Radio section specific styling */
+.bg-dark.text-white {
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)) !important;
+}
+
+.bg-dark.text-white h4 i {
+    color: var(--lumen-gold) !important;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+/* ============================= */
+/* IMAGE STYLING FOR PAGES */
+/* ============================= */
+
+/* Ensure images display properly */
+.page-division img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.page-division img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 40px rgba(247, 141, 30, 0.3);
+}
+
+/* List item styling */
+.page-division ul.list-unstyled li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.page-division ul.list-unstyled li:last-child {
+    border-bottom: none;
+}
+
+/* Button styling */
+.page-division .btn-warning {
+    background: var(--lumen-gold);
+    border: none;
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.page-division .btn-warning:hover {
+    background: #e67e22;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(247, 141, 30, 0.4);
+}
+
+/* Responsive images */
+@media (max-width: 768px) {
+    .page-division img {
+        height: 300px;
+        margin-bottom: 30px;
+    }
+    
+    .page-division .row {
+        text-align: center;
+    }
+}
